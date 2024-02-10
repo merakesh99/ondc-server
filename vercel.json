@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "ondc/wsgi.py",
+      "src": "ondc-server/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.10.11" }
     },
@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "ondc/wsgi.py"
+      "dest": "ondc-server/wsgi.py"
     }
   ]
 }
